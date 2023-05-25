@@ -11,10 +11,7 @@ const Profile = () => {
       {user ? (
         <div>
           <img src={`${user.picture}`} width="20%" />
-          <h1>First Name : {user.given_name}</h1>
-          <h1>Last Name : {user.family_name}</h1>
           <h1>User Name : {user.nickname}</h1>
-          <h1>Email : {user.email}</h1>
         </div>
       ) : (
         <h1>User Must Login</h1>
